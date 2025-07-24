@@ -2,10 +2,11 @@ const enviarmensaje = require("../service/apiservice");
 const verificar = (req, res) => {
 
     try{
-        var tokenandercode = "ANDERCODENODEJSAPIMETA";
-        var token = req.query["hub.verify_token"];
+        // un token que se genera de lado de mi sistema y que a prior se comparte con Meta
+        var tokenandercode = "misupertokenvende";
+        var token = req.query["hub.verify_token"]; // meta manda ese token en este parámetro
         var challenge = req.query["hub.challenge"];
-
+        // se valida que el token compartido sea el correcto
         if (challenge != null && token != null && token == tokenandercode){
             res.send(challenge);
         }else{
