@@ -20,8 +20,20 @@ const verificar = (req, res) => {
 }
 
 const recibir = (req, res) => {
-    console.log(req)
     try{
+        var entry = (req.body["entry"])[0];
+        var changes = (entry["changes"])[0];
+        var value = changes["value"];
+        var objetoMensaje = value["messages"];
+        console.log(objetoMensaje)
+        if (typeof objetoMensaje != "undefined"){
+            var messages = objetoMensaje[0];
+
+            var texto = messages["text"]["body"];
+            var numero = messages["from"];
+
+            // enviarmensaje.EnviarMensajeWhastpapp(texto,numero);
+        }
 
         res.send("EVENT_RECEIVED");
     }catch(e){
