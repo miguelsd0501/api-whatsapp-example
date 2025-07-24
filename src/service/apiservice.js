@@ -127,12 +127,12 @@ function EnviarMensajeWhastpapp(texto,number){
 
     const options = {
         host : "graph.facebook.com",
-        path : "/v15.0/113319844996763/messages",
+        path : "/v22.0/732031549990149/messages",
         method : "POST",
         body : data,
         headers : {
             "Content-Type" : "application/json",
-            Authorization :"Bearer EAATamVJnZAssBAFq6e4HgPu2bZChZCZC6o1IZCVmYZBcHLRkLVgj0OcbR6j5mNG6zYtUQZBNIfvJZCZBERcdEfrdautqnjRsey3w6VIpN59Gjua0ASORJk5uBDmhRVfjpEdgXimrkcZBad1vUMcu94ZCtSBl8dQSeIRp3fwETAcwqifZCemSLE6kXvuihdsp8TICxqVjNAdgvqq74RAv91adseft"
+            Authorization :"Bearer EAASOjjV0AGMBPAqpCvs6M9eJejYCWBtMm5O5pjZAka103H1XLMmXpQKv4DhkcXLzVwXFOjYkjUJFLh4h8hiO6PrTibHLNCt6WWvOSZCosUrNE3r54MdAZCBZBfIGHZAcAnpTJnSEzg92ZBMZBkEpUlzaHP99bjGCkwjFthzd3M7fVlRfmiSLeX2oVzevuxx7UZAPk1lcgIiNdp75NVb6tizte0z4Hxg7f8lqGkIBjVS2vwZDZD"
         }
     };
 

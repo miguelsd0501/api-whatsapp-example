@@ -35,7 +35,7 @@ const recibir = (req, res) => {
             // enviarmensaje.EnviarMensajeWhastpapp(texto,numero);
         } else {
             console.log('Mensaje undefinido:');
-            console.log(req.body)
+            console.log(changes)
         }
 
         res.send("EVENT_RECEIVED");
