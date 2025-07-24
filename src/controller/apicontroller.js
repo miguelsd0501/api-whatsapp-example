@@ -24,8 +24,8 @@ const recibir = (req, res) => {
         var entry = (req.body["entry"])[0];
         var changes = (entry["changes"])[0];
         var value = changes["value"];
+        console.log(value)
         var objetoMensaje = value["messages"];
-        
         if (typeof objetoMensaje != "undefined"){
             var messages = objetoMensaje[0];
             var texto = messages["text"]["body"];
@@ -35,7 +35,8 @@ const recibir = (req, res) => {
             // enviarmensaje.EnviarMensajeWhastpapp(texto,numero);
         } else {
             console.log('Mensaje undefinido:');
-            console.log(changes)
+            var statuses = value["statuses"];
+            console.log(statuses)
         }
 
         res.send("EVENT_RECEIVED");
