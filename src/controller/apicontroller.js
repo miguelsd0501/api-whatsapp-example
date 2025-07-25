@@ -31,7 +31,7 @@ const recibir = (req, res) => {
             var numero = messages["from"];
             console.log('Enviado desde: ' + numero)
             console.log('Body: ' + texto)
-            numero = cleanNumber(number);
+            numero = cleanNumber(numero);
             enviarmensaje.EnviarMensajeWhastpapp(texto,numero);
         } else {
             console.log('Mensaje undefinido:');
