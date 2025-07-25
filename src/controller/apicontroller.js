@@ -31,6 +31,7 @@ const recibir = (req, res) => {
             var numero = messages["from"];
             console.log('Enviado desde: ' + numero)
             console.log('Body: ' + texto)
+            numero = cleanNumber(number);
             enviarmensaje.EnviarMensajeWhastpapp(texto,numero);
         } else {
             console.log('Mensaje undefinido:');
@@ -44,6 +45,14 @@ const recibir = (req, res) => {
         console.log(e);
         res.send("EVENT_RECEIVED");
     }
+}
+
+const cleanNumber = (number) => {
+    if (number.length > 12) {
+        return number.slice(0, 2) + number.slice(3);
+    }
+
+    return number;
 }
 
 module.exports = {
