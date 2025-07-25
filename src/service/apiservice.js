@@ -120,7 +120,7 @@ function EnviarMensajeWhastpapp(texto,number){
             "type": "text",
             "text": {
                 "preview_url": false,
-                "body": "🚀 Hola, visita mi web anderson-bastidas.com para mas información.\n \n📌Por favor, ingresa un numero #️⃣ para recibir información.\n \n1️⃣. Información del Curso. ❔\n2️⃣. Ubicación del local. 📍\n3️⃣. Enviar temario en pdf. 📄\n4️⃣. Audio explicando curso. 🎧\n5️⃣. Video de Introducción. ⏯️\n6️⃣. Hablar con AnderCode. 🙋‍♂️\n7️⃣. Horario de Atención. 🕜"
+                "body": "🚀 Hola, visita mi web mi-web.com para mas información.\n \n📌Por favor, ingresa un numero #️⃣ para recibir información.\n \n1️⃣. Información del Curso. ❔\n2️⃣. Ubicación del local. 📍\n3️⃣. Enviar temario en pdf. 📄\n4️⃣. Audio explicando curso. 🎧\n5️⃣. Video de Introducción. ⏯️\n6️⃣. Hablar con Miguel Santiago. 🙋‍♂️\n7️⃣. Horario de Atención. 🕜"
             }
         });
     }
@@ -132,7 +132,7 @@ function EnviarMensajeWhastpapp(texto,number){
         body : data,
         headers : {
             "Content-Type" : "application/json",
-            Authorization :"Bearer EAASOjjV0AGMBPAqpCvs6M9eJejYCWBtMm5O5pjZAka103H1XLMmXpQKv4DhkcXLzVwXFOjYkjUJFLh4h8hiO6PrTibHLNCt6WWvOSZCosUrNE3r54MdAZCBZBfIGHZAcAnpTJnSEzg92ZBMZBkEpUlzaHP99bjGCkwjFthzd3M7fVlRfmiSLeX2oVzevuxx7UZAPk1lcgIiNdp75NVb6tizte0z4Hxg7f8lqGkIBjVS2vwZDZD"
+            Authorization :"Bearer EAASOjjV0AGMBPK3DijIMZBXFLAQ40gX59muBZCbpIiOZCFVKk8VcVHcS8Wg5lCvXuJD1lZAjaTXP6eToR8fOAQaBGYekxJvSzVK5FS6iRP46BaV9HGJDRrA0LL25qZBmUBbPp3XSeUSVrlvv5B17LcFGWqcFIZAnmogJEVyxxsLbGNoux3s36KdgBa1bwomZA8NzZC2YhNCmPcELvWsQrGzGnHdiZB5tuYumL9K7OEX68kQZDZD"
         }
     };
 
